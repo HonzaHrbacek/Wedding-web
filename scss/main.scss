@@ -1,0 +1,227 @@
+@import "config";
+@import "utilities";
+
+// General styles
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $cream-white;
+  font-family: "Sacramento", cursive;
+  line-height: 1.6;
+  font-size: x-large;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+// Navbar
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $dark-blue;
+  opacity: 0.8;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+
+  ul {
+    display: flex;
+
+    a {
+      color: set-text-color($dark-blue);
+      padding: 5px 15px;
+
+      &:hover {
+        border-bottom: $imperial-red solid 2px;
+      }
+    }
+  }
+}
+
+// Header
+
+.hero {
+  background: $bg-image no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: $cream-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 0, 0, 0.6));
+  }
+
+  & * {
+    z-index: 10;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    padding-top: 480px;
+
+    h3 {
+      max-width: 600px;
+      margin: 10px 0 10px;
+    }
+  }
+}
+
+// RSVP
+
+.container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .form-wrapper {
+    border-radius: 5px;
+    max-width: 700px;
+    background-color: $light-blue;
+    //padding: 0.5rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    max-width: 100%;
+
+    .header {
+      background-color: $dark-blue;
+      padding: 0.3rem 1rem;
+      text-align: center;
+      color: set-text-color($dark-blue);
+
+      h3 {
+        margin: 0;
+      }
+    }
+
+    .form {
+      padding: 1rem 2rem;
+
+      .form-control {
+        margin-bottom: 0.2rem;
+        padding-bottom: 0.5rem;
+        position: relative;
+
+        input {
+          display: block;
+          border: 1px solid $mid-color;
+          border-radius: 4px;
+          width: 100%;
+          font-family: "Roboto", sans-serif;
+          padding: 0.5rem 0.5rem;
+
+          &:focus {
+            outline: 0;
+            border-color: $dark-blue;
+          }
+        }
+
+        textarea {
+          display: block;
+          border: 1px solid $mid-color;
+          border-radius: 4px;
+          width: 100%;
+          padding: 0.3rem 0.3rem;
+          font-family: "Roboto", sans-serif;
+          height: 180px;
+          overflow: hidden;
+
+          &:focus {
+            outline: 0;
+            border-color: $dark-blue;
+          }
+        }
+
+        option {
+          font-family: "Roboto", sans-serif;
+          border: 1px solid $mid-color;
+        }
+
+        i {
+          position: absolute;
+          right: 0;
+          top: 0;
+          visibility: hidden;
+        }
+
+        small {
+          position: absolute;
+          top: 0;
+          right: 50px;
+          visibility: hidden;
+        }
+      }
+
+      .form-control.success input {
+        border-color: green;
+      }
+
+      .form-control.error input {
+        border-color: red;
+      }
+
+      .form-control.success i.fa-check-circle {
+        visibility: visible;
+        color: green;
+        opacity: 0.7;
+      }
+
+      .form-control.error i.fa-exclamation-circle {
+        visibility: visible;
+        color: red;
+        opacity: 0.7;
+      }
+
+      .form-control.error small {
+        visibility: visible;
+        color: red;
+        opacity: 0.7;
+      }
+
+      /*.form-control.message small {
+        visibility: visible;
+        color: #000000;
+        opacity: 0.7;
+      }*/
+
+      .btn-main {
+        display: block;
+        width: 100px;
+        margin: auto;
+        padding: 0.5rem 0;
+        text-align: center;
+        font-family: "Sacramento", cursive;
+        font-size: x-large;
+        border-radius: 5px;
+      }
+    }
+  }
+}
