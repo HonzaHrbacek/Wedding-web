@@ -4,7 +4,6 @@
 }
 
 // Text styles
-
 .heading-1 {
   text-align: center;
   margin: 0.5rem;
@@ -15,9 +14,16 @@
   margin-top: 0.5rem;
 }
 
+.text {
+  text-align: center;
+}
+
+.small {
+  font-size: small;
+}
+
 // Buttons
 %btn-shared {
-  //display: inline-block;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
@@ -29,15 +35,25 @@
     @extend %btn-shared;
     color: set-text-color($dark-blue);
     background-color: $dark-blue;
+    z-index: 1;
 
     &:hover {
-      opacity: 0.9;
+      opacity: 0.8;
+    }
+  }
+
+  &-form {
+    @extend %btn-shared;
+    color: set-text-color($dark-blue);
+    background-color: $dark-blue;
+
+    &:hover {
+      opacity: 0.8;
     }
   }
 }
 
 // Padding
-
 .py {
   &-1-2 {
     padding: 0.5rem 0;
@@ -59,6 +75,11 @@
 .px {
   &-1 {
     padding: 0 2rem;
+
+    &-left {
+      padding: 0;
+      padding-left: 2rem;
+    }
   }
 }
 
@@ -78,15 +99,19 @@
   }
 }
 
-// Other
+//Background
+.dark {
+  text-align: center;
+  background-color: $dark-blue;
+  color: set-text-color($dark-blue);
+}
 
+// Other
 .icon {
   width: 2rem;
 }
 
-.line-red,
-.line-blue {
-  display: block;
+.line-red {
   height: 3px;
   width: 8rem;
   background: $imperial-red;
@@ -94,6 +119,8 @@
 }
 
 .line-blue {
-  background: $dark-blue;
+  height: 3px;
   width: 6rem;
+  background: $dark-blue;
+  margin: 0.2rem auto;
 }

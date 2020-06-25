@@ -12,6 +12,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkInputs();
+  validateSubmission();
 });
 
 function checkInputs() {
@@ -35,7 +36,7 @@ function checkInputs() {
   if (telefonValue === "" || isNaN(telefonValue) || telefonValue.length < 9) {
     //show error
     //add error class
-    setErrorFor(telefon, "Prosím vyplňte číslo");
+    setErrorFor(telefon, "Prosím vyplňte platné číslo");
   } else {
     //add success class
     setSuccessFor(telefon);
@@ -73,7 +74,9 @@ function checkInputs() {
   /*if (ubytovaniValue === "jine") {
     displayComment(ubytovani, "Prosíme uveďte níže, \n kde hodláte nocovat :)");
   }*/
+}
 
+function validateSubmission() {
   if (
     jmeno.parentElement.className === "form-control success" &&
     telefon.parentElement.className === "form-control success" &&
@@ -81,7 +84,7 @@ function checkInputs() {
     pocetDospeli.parentElement.className === "form-control success" &&
     pocetDeti.parentElement.className === "form-control success"
   ) {
-    heading.textContent = "Děkujeme za vyplnění formuláře :)";
+    /*heading.textContent = "Děkujeme za vyplnění formuláře :)";
 
     setTimeout(function () {
       form.reset();
@@ -92,12 +95,14 @@ function checkInputs() {
       pocetDeti.parentElement.classList.toggle("success");
       //ubytovani.parentElement.classList.toggle("message");
     }, 4000);
-    console.log("It works");
+    console.log("It works");*/
 
-    function val() {
+    /*function val() {
       return true;
-    }
-    console.log(val());
+    }*/
+
+    document.getElementById("rsvp-form").submit();
+    console.log("OK");
   }
 }
 
