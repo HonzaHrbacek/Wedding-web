@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Svatební web etth" />
     <meta name="keywords" content="etth, svatba" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Sacramento&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sacramento&display=swap"
       rel="stylesheet"
     />
 
@@ -17,37 +18,69 @@
       integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://codehard.cz/svatba/css/lightbox.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+    <link rel="stylesheet" href="https://codehard.cz/svatba/css/main.css" />
+    <!-- <link rel="stylesheet" href="/css/main.css" /> -->
     <title>Náš svatební web</title>
   </head>
   <body id="home">
     <!-- Loader -->
 
-    <!-- <div class="loader">
+    <div class="loader">
       <div class="srdce"></div>
-    </div> -->
+    </div>
 
     <!-- Uvod -->
 
     <header class="hero" id="parallax-1">
       <div id="navbar" class="navbar">
         <h2 class="logo">etth<i class="fas fa-heart red-text"></i></h2>
-        <nav>
-          <ul>
-            <li><a href="#home">Úvod</a></li>
-            <li><a href="#kdy-kde">Kdy a kde</a></li>
-            <li><a href="#rsvp">RSVP</a></li>
-            <li><a href="#ostatni-info">Ostatní informace</a></li>
-            <li><a href="#galerie">Galerie</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-          </ul>
-        </nav>
+        <button class="hamburger" id="hamburgerID">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul id="nav-ul" class="nav-ul">
+          <li><a href="#home">Úvod</a></li>
+          <li><a href="#kdy-kde">Kdy a kde</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+          <li>
+            <a href="#ostatni-info">Ostatní informace</a
+            ><i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-right"></i>
+            <ul>
+              <li class="sub-nav">
+                <a href="#svatebni-poselstvi">Svatební poselství</a>
+              </li>
+              <li class="sub-nav">
+                <a href="#dulezite-kontakty">Důležité kontakty</a>
+              </li>
+              <li class="sub-nav"><a href="#nase-rodina">Naše rodina</a></li>
+              <li class="sub-nav">
+                <a href="#svatebni-dary">Svatební dary</a>
+              </li>
+              <li class="sub-nav"><a href="#cesta-tam">Cesta tam</a></li>
+              <li class="sub-nav"><a href="#obrad">Obřad</a></li>
+              <li class="sub-nav">
+                <a href="#ubytovani-v-kempu">Ubytování v kempu</a>
+              </li>
+              <li class="sub-nav">
+                <a href="#doprovodne-aktivity">Doprovodné aktivity</a>
+              </li>
+              <li class="sub-nav">
+                <a href="#program-na-nedeli">Program na neděli</a>
+              </li>
+              <li class="sub-nav"><a href="#cesta-zpet">Cesta zpět</a></li>
+            </ul>
+          </li>
+          <li><a href="#galerie">Galerie</a></li>          
+        </ul>
       </div>
       <div class="content">
-        <h1>
-          Budeme se brát, pojďme si to užít společně!
-        </h1>
+        <h1>Děkujeme, že jste si to užili s námi! ;)</h1>
         <h3>5. září 2020</h3>
         <a href="#kdy-kde" class="btn-main" id="btn-main">Více informací</a>
       </div>
@@ -60,15 +93,25 @@
         <div class="py-1"></div>
         <div class="line-blue"></div>
         <div class="line-red"></div>
-        <h2 class="heading-1">Kdy a kde</h2>
+        <h2 class="heading-1">
+          Kdy a kde aneb proč právě tady, když je to tak daleko ;)
+        </h2>
         <div class="line-red"></div>
         <div class="line-blue"></div>
         <div class="py-1"></div>
 
-        <p class="px-1 text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo impedit
-          doloribus iusto dolore commodi incidunt corrupti magnam modi obcaecati
-          iure.
+        <p class="px-1">
+          Když se v 60. letech minulého století začalo údolí řeky Mže měnit v
+          přehradní jezero Hracholusky, postavili si babička Květuška s malou
+          Helenkou a Květuškou (maminka nevěsty) chatu se zahradou na jeho
+          pravém břehu a babička Naďa s dědou Přemíkem a malým Jirkou (tatínek
+          nevěsty) chatu v lese na jeho levém břehu. Procestovali jsme s
+          Honzíkem řadu krásných míst, ale tady je nám nejlépe, a tak bychom Vám
+          to tu chtěli ukázat. V létě tu plaveme, plujeme na loďce a každý rok
+          si slibujeme, že letos už se fakt naučíme windsurfovat. A jednou v
+          zimě Vám byl takový mráz, že jsme dobruslili z hráze až k nám na
+          chatu. Ale doufáme, že 5. září 2020 to bude spíš na to koupání než na
+          bruslení :)
         </p>
 
         <div class="py-1-2"></div>
@@ -77,11 +120,11 @@
 
         <h3 class="heading-2">
           <img
-            src="/images/castle.svg"
+            src="https://codehard.cz/svatba/images/castle.svg"
             alt="castle"
             class="icon"
           />&nbsp;&nbsp;Obřad&nbsp;&nbsp;<img
-            src="/images/nature.svg"
+            src="https://codehard.cz/svatba/images/nature.svg"
             alt="park"
             class="icon"
           />
@@ -92,29 +135,31 @@
         <div class="px-1">
           <h4 class="heading-2">Zámek Luhov</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            quidem magni, assumenda similique eius quis non doloremque deserunt
-            corporis quae dolores placeat quasi commodi dicta! Distinctio nisi
-            accusamus labore tempore eaque dolores iste explicabo adipisci
-            voluptas doloribus illo, corrupti delectus, et porro natus sed.
-            Saepe suscipit odio laborum dolorem eius minima distinctio,
-            explicabo possimus sed porro, atque labore? Vitae aliquam neque
-            sapiente, quidem porro facilis veniam voluptas quos excepturi eius
-            aliquid minima itaque quam dolores qui, omnis maiores eligendi minus
-            amet fuga nobis saepe molestiae nisi at? Quaerat nihil recusandae
-            sint soluta, vel aspernatur cum sit accusamus numquam voluptates
-            magnam.
+            <a
+              href="https://www.facebook.com/zamekluhov"
+              target="_blank"
+              style="color: #1d3557"
+              ><b>Zámek Luhov</b></a
+            >
+            leží kousek od přehrady Hracholusky ve stejnojmenné vsi. Když
+            přijedete ze správné strany, přivítá vás majestátní alej a koně
+            pasoucí se všude kolem. Zámek Luhov nás dlouho lákal zpoza zdí. Loni
+            jsme ho konečně navštívili a okouzlil nás ještě více než zvenčí. Má
+            krásnou zahradu, obdivuhodně restaurovaný interiér a také moc milé
+            majitele, kteří se zámku po dlouhé době chátrání ujali. Rádi Vás
+            zámkem provedou. A my Vás tam ještě raději 5. září 2020 ve 13:00
+            přivítáme.
           </p>
         </div>
         <div class="py-1-2"></div>
 
-        <div class="container-kdyakde">
-          <img src="/images/luhov.jpg" alt="Luhov" class="px-1" />
+        <div class="container-kdyakde px-1">
+          <div class="image-grid-luhov"></div>
           <div class="mapa">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.67552604639!2d13.142541042264849!3d49.813290085998545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470a8e8c1f645f55%3A0x8d04b1a2f605db59!2sZ%C3%A1mek%20Luhov!5e0!3m2!1scs!2scz!4v1592485849034!5m2!1scs!2scz"
               frameborder="0"
-              style="border: 0;"
+              style="border: 0"
               allowfullscreen=""
               aria-hidden="false"
               tabindex="0"
@@ -125,11 +170,11 @@
         <div class="py-1"></div>
 
         <div class="px-1">
-          <h4 class="heading-2">Program</h4>
+          <h4 class="heading-2">Plánovaný harmonogram</h4>
           <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            quidem magni, assumenda similique eius quis non doloremque deserunt
-            corporis quae dolores placeat quasi commodi dicta!
+            Níže uvádíme plánovaný harmonogram obřadu. Snad se nám ho podaří
+            dodržet. Jestliže ne, berme to prosím všichni s úsměvem, protože
+            změna je přece život :)
           </p>
         </div>
         <div class="py-1-2"></div>
@@ -138,50 +183,26 @@
           <ul>
             <li>
               <div>
-                <h3>
-                  13:00
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem libero quis nostrum enim, doloribus dignissimos
-                  vero molestiae molestias ipsam aperiam?
-                </p>
+                <h3>13:00</h3>
+                <h4>Vítání svatebních hostů včetně malého pohoštění</h4>
               </div>
             </li>
             <li>
               <div>
-                <h3>
-                  13:30
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem libero quis nostrum enim, doloribus dignissimos
-                  vero molestiae molestias ipsam aperiam?
-                </p>
+                <h3>13:30</h3>
+                <h4>Začátek svatebního obřadu</h4>
               </div>
             </li>
             <li>
               <div>
-                <h3>
-                  14:00
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem libero quis nostrum enim, doloribus dignissimos
-                  vero molestiae molestias ipsam aperiam?
-                </p>
+                <h3>14:00</h3>
+                <h4>Gratulace a společné focení</h4>
               </div>
             </li>
             <li>
               <div>
-                <h3>
-                  14:30
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem libero quis nostrum enim, doloribus dignissimos
-                  vero molestiae molestias ipsam aperiam?
-                </p>
+                <h3>14:30</h3>
+                <h4>Pozvolný přesun do kempu Keramika</h4>
               </div>
             </li>
           </ul>
@@ -191,11 +212,11 @@
 
         <h3 class="heading-2">
           <img
-            src="/images/river.svg"
+            src="https://codehard.cz/svatba/images/river.svg"
             alt="camp"
             class="icon"
           />&nbsp;&nbsp;Oslava&nbsp;&nbsp;<img
-            src="/images/birthday.svg"
+            src="https://codehard.cz/svatba/images/birthday.svg"
             alt="cake"
             class="icon"
           />
@@ -206,29 +227,28 @@
         <div class="px-1">
           <h4 class="heading-2">Kemp Keramika</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            quidem magni, assumenda similique eius quis non doloremque deserunt
-            corporis quae dolores placeat quasi commodi dicta! Distinctio nisi
-            accusamus labore tempore eaque dolores iste explicabo adipisci
-            voluptas doloribus illo, corrupti delectus, et porro natus sed.
-            Saepe suscipit odio laborum dolorem eius minima distinctio,
-            explicabo possimus sed porro, atque labore? Vitae aliquam neque
-            sapiente, quidem porro facilis veniam voluptas quos excepturi eius
-            aliquid minima itaque quam dolores qui, omnis maiores eligendi minus
-            amet fuga nobis saepe molestiae nisi at? Quaerat nihil recusandae
-            sint soluta, vel aspernatur cum sit accusamus numquam voluptates
-            magnam.
+            Nedaleko naší chaty, za hlubokým lesem a širým polem, leží na levém
+            břehu přehrady Hracholusky
+            <a
+              href="https://kempkeramika.cz/"
+              target="_blank"
+              style="color: #1d3557"
+              ><b>kemp Keramika</b></a
+            >
+            . Honzík sem v létě za rozbřesku jezdí pro křupavé rohlíky na své
+            hipsterské skládačce, a když ustoupí voda, chodíme sem s dětmi podél
+            břehu na zmrzlinu.
           </p>
         </div>
         <div class="py-1-2"></div>
 
-        <div class="container-kdyakde">
-          <img src="/images/keramika.jpg" alt="Keramika" class="px-1" />
+        <div class="container-kdyakde px-1">
+          <div class="image-grid-keramika"></div>
           <div class="mapa">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2575.824693835442!2d13.158391115926863!3d49.789361542657744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470a8eb000000001%3A0xcf3b72d7a0e3870f!2sKemp%20KERAMIKA!5e0!3m2!1sen!2scz!4v1592497481188!5m2!1sen!2scz"
               frameborder="0"
-              style="border: 0;"
+              style="border: 0"
               allowfullscreen=""
               aria-hidden="false"
               tabindex="0"
@@ -239,11 +259,11 @@
         <div class="py-1"></div>
 
         <div class="px-1">
-          <h4 class="heading-2">Program</h4>
+          <h4 class="heading-2">Plánovaný harmonogram</h4>
           <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            quidem magni, assumenda similique eius quis non doloremque deserunt
-            corporis quae dolores placeat quasi commodi dicta!
+            Níže uvádíme plánovaný harmonogram oslavy. Budeme se ho snažit
+            dodržet, ale na 100 % to určitě nedáme, což nám jistě všichni
+            prominete, že? :)
           </p>
         </div>
         <div class="py-1-2"></div>
@@ -252,50 +272,44 @@
           <ul>
             <li>
               <div>
-                <h3>
-                  15:00
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem libero quis nostrum enim, doloribus dignissimos
-                  vero molestiae molestias ipsam aperiam?
-                </p>
+                <h3>15:00</h3>
+                <h4>Ubytování v kempu a začátek rautu</h4>
               </div>
             </li>
             <li>
               <div>
-                <h3>
-                  16:00
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem libero quis nostrum enim, doloribus dignissimos
-                  vero molestiae molestias ipsam aperiam?
-                </p>
+                <h3>16:00</h3>
+                <h4>Začátek her pro děti a dospělé</h4>
               </div>
             </li>
             <li>
               <div>
-                <h3>
-                  17:00
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem libero quis nostrum enim, doloribus dignissimos
-                  vero molestiae molestias ipsam aperiam?
-                </p>
+                <h3>16:30</h3>
+                <h4>Krájení dortu a kávička</h4>
               </div>
             </li>
             <li>
               <div>
-                <h3>
-                  18:00
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem libero quis nostrum enim, doloribus dignissimos
-                  vero molestiae molestias ipsam aperiam?
-                </p>
+                <h3>18:00</h3>
+                <h4>Kapela <a href="https://www.kapelametro.cz/" target="blank" style="color: #1d3557">METRO</a> a první tanec</h4>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>19:00</h3>
+                <h4>Házení kyticí v první přestávce kapely</h4>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>20:00</h3>
+                <h4>Pouštění lodiček</h4>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>22:00</h3>
+                <h4>Kapela končí, volná zábava pokračuje :)</h4>
               </div>
             </li>
           </ul>
@@ -312,23 +326,34 @@
         <div class="line-red"></div>
         <div class="line-blue"></div>
         <div class="py-1"></div>
+        <p class="text">
+          Vyplňte a odešlete prosím tento formulář. Uděláte radost zejména
+          Honzíkovi, který s ním strávil několik bezesných nocí :)
+        </p>
+        <div class="py-1"></div>
 
         <div class="container-rsvp">
           <div class="form-wrapper">
             <div class="header">
               <h3 id="form-heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Úplně nejlepší svatební formulář na světě ;)
               </h3>
             </div>
             <form
-              action="/process.php"
+              action="https://codehard.cz/process.php"
               method="POST"
               class="form"
               id="rsvp-form"
             >
               <div class="form-control">
                 <label for="jmeno">Jméno</label>
-                <input type="text" name="jmeno" id="jmeno" placeholder="" />
+                <input
+                  type="text"
+                  name="jmeno"
+                  id="jmeno"
+                  placeholder=""
+                  class="normal-font"
+                />
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error</small>
@@ -336,7 +361,13 @@
 
               <div class="form-control">
                 <label for="telefon">Telefonní číslo</label>
-                <input type="text" name="telefon" id="telefon" placeholder="" />
+                <input
+                  type="text"
+                  name="telefon"
+                  id="telefon"
+                  placeholder=""
+                  class="normal-font"
+                />
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error</small>
@@ -344,7 +375,13 @@
 
               <div class="form-control">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder=""
+                  class="normal-font"
+                />
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error</small>
@@ -353,6 +390,7 @@
               <div class="form-control">
                 <label for="pocet-dospeli">Počet dospělých</label>
                 <input
+                  class="normal-font"
                   type="number"
                   name="pocetdospeli"
                   id="pocet-dospeli"
@@ -367,6 +405,7 @@
               <div class="form-control">
                 <label for="pocet-deti">Počet dětí</label>
                 <input
+                  class="normal-font"
                   type="number"
                   name="pocetdeti"
                   id="pocet-deti"
@@ -380,7 +419,12 @@
 
               <div class="form-control" id="form-ubytovani">
                 <label for="ubytovani">Preferované ubytování:</label>
-                <select id="ubytovani" name="ubytovani" form="rsvp-form">
+                <select
+                  id="ubytovani"
+                  name="ubytovani"
+                  form="rsvp-form"
+                  class="normal-font"
+                >
                   <option value="chatka">Chatka</option>
                   <option value="hobiti-dum">Hobití dům</option>
                   <option value="obytne-auto">Obytné auto</option>
@@ -394,11 +438,12 @@
               <div class="form-control">
                 <label for="komentar">Komentář</label><br />
                 <textarea
+                  class="normal-font"
                   name="komentar"
                   id="komentar"
                   cols="50"
                   rows="5"
-                  placeholder="Chcete nám něco pěkného sdělit? Můžete tak učinit zde :)"
+                  placeholder="Chcete nám něco pěkného sdělit? Můžete tak učinit zde ;)"
                 ></textarea>
               </div>
 
@@ -424,57 +469,624 @@
         <div class="line-blue"></div>
         <div class="py-1"></div>
         <p class="px-1 text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          similique maiores voluptatum iusto animi odio sequi ad totam excepturi
-          accusantium nulla reprehenderit quas quo autem cum culpa, in nisi
-          esse.
+          Tady se dozvíte další důležité informace související s organizací naší
+          svatby. Budeme je průběžně aktualizovat, takže si prosím naše svatební
+          webovky uložte mezi své oblíbené stránky a navštěvujte je minimálně 3x
+          denně :)
         </p>
 
-        <h3 class="heading-2">Cesta tam</h3>
-        <div class="line-blue"></div>
-        <div class="py-1-2"></div>
-        <p class="px-1 text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          similique maiores voluptatum iusto animi odio sequi ad totam excepturi
-          accusantium nulla reprehenderit quas quo autem cum culpa, in nisi
-          esse.
-        </p>
-        <h3 class="heading-2">Obřad</h3>
-        <div class="line-blue"></div>
-        <div class="py-1-2"></div>
-        <p class="px-1 text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          similique maiores voluptatum iusto animi odio sequi ad totam excepturi
-          accusantium nulla reprehenderit quas quo autem cum culpa, in nisi
-          esse.
-        </p>
-        <h3 class="heading-2">Oslava</h3>
-        <div class="line-blue"></div>
-        <div class="py-1-2"></div>
-        <p class="px-1 text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          similique maiores voluptatum iusto animi odio sequi ad totam excepturi
-          accusantium nulla reprehenderit quas quo autem cum culpa, in nisi
-          esse.
-        </p>
-        <h3 class="heading-2">Svatební dar</h3>
-        <div class="line-blue"></div>
-        <div class="py-1-2"></div>
-        <p class="px-1 text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          similique maiores voluptatum iusto animi odio sequi ad totam excepturi
-          accusantium nulla reprehenderit quas quo autem cum culpa, in nisi
-          esse.
-        </p>
-        <h3 class="heading-2">Cesta zpět</h3>
-        <div class="line-blue"></div>
-        <div class="py-1-2"></div>
-        <p class="px-1 text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          similique maiores voluptatum iusto animi odio sequi ad totam excepturi
-          accusantium nulla reprehenderit quas quo autem cum culpa, in nisi
-          esse.
-        </p>
+        <div id="svatebni-poselstvi">
+          <h3 class="heading-2">Svatební poselství</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <p class="px-1 text">
+            Máme kolem sebe spoustu fajn lidí. To jste vy! A jsme moc rádi, že
+            jste přijali pozvání na naši svatbu :) Ne všichni se znáte, ale
+            jelikož jste všichni moc příjemní, zajímaví, inteligentní, více či
+            méně upovídaní a hlavně Vás máme rádi, bude náš těšit, když se
+            vzájmeně poznáte a spřátelíte ;)
+          </p>
+        </div>
+
+        <div id="dulezite-kontakty">
+          <div class="py-1-2"></div>
+          <h3 class="heading-2">Důležité kontakty</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <p class="px-1 text">
+            Do 4. září 2020 se pokusíme vyřešit všechny Vaše starosti,
+            připomínky, přání a komplikované i banální dotazy. Číslo na nás máte
+            ;) Ale v den D se prosím obracejte na tyto veledůležité osoby,
+            kterým nesmírně děkujeme za jejich ochotu pomoci nám s organizací
+            naší svatby.
+          </p>
+
+          <div class="py-1-2"></div>
+
+          <div class="grid-kontakty">
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/klarka-orez2.jpg"
+                  alt="Klarka"
+                />
+              </div>
+              <div class="kontakt-body">
+                <h3>Klárka Rysková</h3>
+                <h4>Telefon: 732 734 226</h4>
+                <h4>Specializace:</h4>
+                <ul>
+                  <li>• Koordinace obřadu včetně drobného občerstvení</li>
+                  <li>• Informace k ubytování</li>
+                  <li>• Odpolední bojovka pro děti</li>
+                </ul>
+                <div class="py-1-2"></div>
+                <div class="line-blue"></div>
+                <div class="py-1-2"></div>
+                <p>
+                  Klárka je svědkyně Terky a její dlouholetá kamarádka. Potkaly
+                  se při zápisu na VŠE a Terka se díky ní infiltrovala do toho
+                  pravého vysokoškolského života na kolejích. Přátelí se na
+                  dálku, ale intenzivně. S Klárkou si můžete popovídat například
+                  o jejím milovaném Děčínu a okolí, výletech do přírody,
+                  ferratách nebo pečení vánoček či perníčků :) Když ji vzbudíte
+                  uprostřed noci, odříká Vám Morseovku, uváže několik uzlů a
+                  hlavně bude naslouchat Vašim problémům klidně až do rána ;)
+                </p>
+              </div>
+            </div>
+
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/risa_orez.jpg"
+                  alt="Risa"
+                />
+              </div>
+              <div class="kontakt-body">
+                <h3>Ríša Kvěch</h3>
+                <h4>Telefon: 774 203 655</h4>
+                <h4>Specializace:</h4>
+                <ul>
+                  <li>• Informace k cestě na obřad včetně parkování</li>
+                  <li>• Sportovní aktivity</li>
+                </ul>
+                <div class="py-1-2"></div>
+                <div class="line-blue"></div>
+                <div class="py-1-2"></div>
+                <p>
+                  Ríša je Honzův svědek. Potkali se před mnoha lety na základce.
+                  Když se paní učitelka ptala dětí, co dostaly od Ježíška, tak
+                  se Ríša pochlubil novými teniskami Fila a na Honzův účet
+                  pronesl, že mu Ježíšek nejspíš nadělil pupínky. Prostě kamarád
+                  k nezaplacení :) S Ríšou se můžete pobavit například o
+                  surfování, hudbě nebo útěcích do divočiny v dodávce.
+                </p>
+              </div>
+            </div>
+
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/terka-serka_orez.jpg"
+                  alt="Terka Serka"
+                />
+              </div>
+              <div class="kontakt-body">
+                <h3>Terezka Šerková</h3>
+                <h4>Telefon: 773 957 409</h4>
+                <h4>Specializace:</h4>
+                <ul>
+                  <li>• Koordinace fotografování po obřadu</li>
+                </ul>
+                <div class="py-1-2"></div>
+                <div class="line-blue"></div>
+                <div class="py-1-2"></div>
+                <p>
+                  Terezka je přítelkyně Terčiného bráchy Tomáše a už si bez ní
+                  neumíme představit žádnou rodinnou sešlost. S Terezkou si
+                  můžete popovídat například o fotografování, designu, beach
+                  volleyballu nebo Kodani, která je její nejoblíbenější město na
+                  světe. Taky peče vynikající banana bread :) Terezka a Tom jsou
+                  vášnivými hracholuskými chataři jako my ;)
+                </p>
+              </div>
+            </div>
+
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/sima_orez.jpg"
+                  alt="Sima"
+                />
+              </div>
+
+              <div class="kontakt-body">
+                <h3>Simča Fenclová</h3>
+                <h4>Telefon: 722 967 770</h4>
+                <h4>Specializace:</h4>
+                <ul>
+                  <li>• Odpolední bojovka pro děti</li>
+                </ul>
+
+                <div class="line-blue"></div>
+                <div class="py-1-2"></div>
+                <p>
+                  Simča je Terčina sestřenice. Moravačka křtěná Mží ;), se
+                  kterou můžete probírat výtvarno všeho druhu (umělecké
+                  návrhářství, šítí, malování na papír a jiné přírodní
+                  materiály). Také Vám ráda naplánuje výlet na kole v okolí
+                  Lednicko-valtického areálu. Jejího bráchu, dvojče, Kubu
+                  poznáte podle dredů a foťáku v ruce. Nevěsta, Simonka, Kuba a
+                  Tom spolu trávívali většinu léta právě tady na Hráchách u
+                  babičky Květušky. Zejména dnes, perspektivou rodiče, nechápu,
+                  jak to babička zvládla ;)
+                </p>
+              </div>
+            </div>
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/kacka2-orez.jpg"
+                  alt="Kacka"
+                />
+              </div>
+
+              <div class="kontakt-body">
+                <h3>Kačka Peřinová</h3>
+                <h4>Specializace:</h4>
+                <ul>
+                  <li>• Kreativní dílničky pro děti</li>
+                </ul>
+
+                <div class="line-blue"></div>
+                <div class="py-1-2"></div>
+                <p>
+                  Kačka je Honzova neteř a na naši svatbu trpělivě čeká už téměř
+                  10 let. Dali jsme si na čas, ale lepší pozdě, nežli vůbec,ne?
+                  S Kačkou si můžete popovídat například o cheerleedingu,
+                  Netflixu nebo o saských lidových zvycích :)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="nase-rodina">
+          <div class="py-1-2"></div>
+          <h3 class="heading-2">Naše rodina</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <p class="px-1 text">
+            A tohle je naše milá rodina. Moc si vážíme všeho, co pro nás
+            udělali, stále dělají a že jsme spolu. Díky!
+          </p>
+          <div class="py-1-2"></div>
+          <h4 class="text">Rodina Terezky</h4>
+
+          <div class="grid-kontakty">
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/kveta2.jpg"
+                  alt="Kveta"
+                />
+              </div>
+
+              <div class="kontakt-body">
+                <h3>Maminka Květa</h3>
+              </div>
+            </div>
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/jirka1.jpg"
+                  alt="Jirka"
+                />
+              </div>
+
+              <div class="kontakt-body">
+                <h3>Tatínek Jirka</h3>
+              </div>
+            </div>
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/babicka-orez.jpg"
+                  alt="babicka"
+                />
+              </div>
+
+              <div class="kontakt-body">
+                <h3>Babička Květa</h3>
+              </div>
+            </div>
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/tom-terka-orez1.jpg"
+                  alt="Tom a Terka"
+                />
+              </div>
+
+              <div class="kontakt-body">
+                <h3>Brácha Tomáš s přítelkyní Terezkou</h3>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="text">Rodina Honzy</h4>
+
+          <div class="grid-kontakty">
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/mamca-orez.jpg"
+                  alt="mamca"
+                />
+              </div>
+              <div class="kontakt-body">
+                <h3>Maminka Hanka</h3>
+              </div>
+            </div>
+
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/lenka-kacka.jpg"
+                  alt="Lenka a Kacka"
+                />
+              </div>
+
+              <div class="kontakt-body">
+                <h3>Sestra Lenka a neteř Kačka</h3>
+              </div>
+            </div>
+            <div class="kontakt my-1">
+              <div class="kontakt-header">
+                <img
+                  src="https://codehard.cz/svatba/images/dan-olik.jpg"
+                  alt="Dan a Olik"
+                />
+              </div>
+
+              <div class="kontakt-body">
+                <h3>Švagr Dan a synovec Olík</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="svatebni-dary">
+          <div class="py-1-2"></div>
+          <h3 class="heading-2">Svatební dary</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <p class="px-1 text">
+            Největším darem pro nás bude, že přijedete a oslavíme to spolu. Díky
+            Vám za to! Pokud i tak přemýšlíte o dárku, tak budeme rádi za
+            příspěvek na svatební cestu. Příští rok bychom chtěli vyrazit na
+            Sicílii či Korsiku, a tak Vaše dary použijeme na výkupné pro
+            sicilskou mafii či korsické separatisty ;)
+          </p>
+        </div>
+
+        <div id="cesta-tam">
+          <div class="py-1-2"></div>
+          <h3 class="heading-2">Cesta tam</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <p class="px-1 text">
+            Jelikož se s většinou z Vás setkáme až hodinu po poledni, níže
+            najdete tipy, kde byste se mohli cestou zastavit na oběd, aby Vám
+            během obřadu nekručelo v břiše ;) Malé občerstvení bude přichystáno
+            i na zámku, ale skutečná hostina začíná až v 15 hodin v kempu
+            Keramika.
+          </p>
+
+          <div class="py-1-2"></div>
+          <ul class="px-1">
+            <li class="text normal-font">
+              <a href="http://restaurace.farmalistany.cz/" target="_blank"
+                ><b> • Restaurace farma Líšťany</b></a
+              >
+              - chutnalo nám, mají tu hřiště pro děti a je to cca 10 minut od
+              zámku Luhov, doporučujeme rezervaci!
+            </li>
+            <li class="text normal-font">
+              <a
+                href="https://www.facebook.com/Pizzeria-Da-Pietro-656456771071151/"
+                target="_blank"
+                ><b> • Pizzeria Da Pietro</b></a
+              >
+              - plzeňská pizzerie s vynikajícími referencemi od bratránka Kuby a
+              bráchy Toma
+            </li>
+            <li class="text normal-font">
+              <a href="http://restauraceumze.cz/" target="_blank"
+                ><b>• Restaurace U Mže</b></a
+              >
+              - zatím neotestováno, hřiště pro děti, na okraji Plzně směrem k
+              zámku Luhov
+            </li>
+            <li class="text normal-font">
+              <a href="https://kalikovskymlyn.cz/" target="_blank"
+                ><b>• Kalikovský mlýn</b></a
+              >
+              - taková normální lepší plzeňská restaurace ;)
+            </li>
+          </ul>
+        </div>
+
+        <div id="obrad">
+          <div class="py-1-2"></div>
+          <h3 class="heading-2">Obřad</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <p class="px-1 text">
+            Byli bychom rádi, kdyby se obřad konal v zahradě zámku, a to za
+            každého počasí. Vezměte si tedy, prosím, deštníky, ať nám pomůžete
+            odlákat déšť ;) Zato však nedoporučujeme boty na podpatku, protože
+            trávník v místě obřadu je měkký. Židlí je pouze dvanáct a přednostní
+            právo mají Ti nejmoudřejší a těhotné. Pro ostatní vezmeme pár
+            piknikových dek. Házení rýže je povoleno.<br />
+            Rádi Vás obejmeme, podáme Vám ruku nebo Vás políbíme. Nicméně zcela
+            pochopíme, když o to s ohledem na současnou situaci nebudete stát.
+            Stačí naznačit nastavením lokte a můžeme se pozdravit či si
+            pogratulovat tímto novým módním způsobem ;)
+          </p>
+          <div class="py-1-2"></div>
+
+          <h4 class="text">Info mapka místa obřadu:</h4>
+          <div class="container-mapka">
+            <div class="grid-mapka">
+              <div class="mapka">
+                <img
+                  src="https://codehard.cz/svatba/images/mapa-luhov.jpg"
+                  alt="mapka Luhov"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="ubytovani-v-kempu">
+          <div class="py-1-2"></div>
+          <h3 class="heading-2">Ubytování v kempu</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <p class="px-1 text">
+            Po skončení obřadu se přesuneme do kempu Keramika (cca 15 minut).
+            Větší část cesty vede po úzké nezpevněné silnici, polem i lesem,
+            takže se spolujezdci můžou dosyta kochat. Řidiči raději méně,
+            protože v okolí žije hodně zajíců, srnek a divočáků, kterým je lépe
+            se vyhnout :) Neplánujeme žádný hromadný společný přesun, spíše
+            postupný a pozvolný, ať při příjezdu do kempu nevzniknou zácpy.
+          </p>
+          <div class="py-1-2"></div>
+
+          <h4 class="text">Info mapka kempu:</h4>
+          <div class="container-mapka">
+            <div class="grid-mapka">
+              <div class="mapka">
+                <img
+                  src="https://codehard.cz/svatba/images/mapa-keramika.jpg"
+                  alt="mapka Keramika"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="py-1-2"></div>
+          <p class="px-1 text">
+            Kde kdo bydlí bude sdělováno individuálně na základě Vašich
+            požadavků a našich možností. V místě obřadu bude vystavená
+            informační tabule s rozpisem ubytování v kempu a chatky budou
+            označeny Vašimi jmény. <br />
+
+            Klíčky od chatek Vám předáme po skončení obřadu. Pokud byste se
+            rozhodli přijet nejprve do kempu (před obřadem) dejte nám prosím
+            nejpozdeji během pátku vědět, abychom nechali klíčky na recepci.
+            Součástí klíčů je čip od brány, kterou vjedete do "naší" části kempu
+            (viz obrázek výše).<br />
+            Ty, kteří si nevyzvednou klíčky na recepci, prosíme, aby se
+            zastavili na recepci nejpozději do sobotních 20:00 s jedním OP na
+            chatku.<br />
+            Noc ze soboty na neděli je na nás. Kdo bude chtít přijet dříve nebo
+            odjet později, nechť si prosím dodatečné noci uhradí sám. Povlečení
+            si prosím vezměte vlastní nebo je možné si ho za poplatek (60
+            Kč/osoba) půjčit na místě. Dosah chůviček z chatek do hlavní budovy
+            není garantován. Zato je to dobrý důvod k občasným procházkám pod
+            nebem posetým hvězdami ;)
+          </p>
+        </div>
+
+        <div id="doprovodne-aktivity">
+          <div class="py-1-2"></div>
+          <h3 class="heading-2">Doprovodné aktivity</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <p class="px-1 text">
+            Na oslavě samozřejmě nebude chybět pohoštění (veškeré jídlo a pití,
+            kromě tvrdého je na nás), živá hudba a pár tradičních svatebních
+            zvyků.<br />
+            Hostina proběhne formou rautu, který začíná vývarem s knedlíčky. Na
+            nic nečekejte a jezte ;) Přípitek bude až s dortem. Zasedací pořádek
+            bude jen pro nejužší rodinu (rodiče, babičku a sourozence). Vy
+            ostatní (neméně milí :)) se prosím posaďte dle libosti buď uvnitř
+            restaurace nebo venku na terase. Vzhledem k tomu, že oslava bude
+            probíhat částečně venku, vezměte si s sebou dostatečně teplé
+            oblečení. Například Terka si bere péřovou vestičku, kterou měla v
+            Nepálu :)<br />
+            Dobrou náladu bychom dále chtěli podpořit následujícími doprovodnými
+            aktivitami, kterých se můžete zúčastnit dle vlastní libosti.
+          </p>
+          <div class="py-1-2"></div>
+          <h4 class="text">Aktivity pro dospělé:</h4>
+          <ul class="px-1">
+            <li class="text normal-font">• Badminton</li>
+            <li class="text normal-font">• Pétanque</li>
+            <li class="text normal-font">• Kubb</li>
+            <li class="text normal-font">• Minigolf</li>
+            <li class="text normal-font">
+              • Vodní sporty (v kempu jsou k zapůjčení lodičky, šlapadla,
+              paddleboardy)
+            </li>
+            <li class="text normal-font">• Rybaření</li>
+          </ul>
+          <div class="py-1-2"></div>
+          <h4 class="text">Aktivity pro děti:</h4>
+          <ul class="px-1">
+            <li class="text normal-font">
+              • Dětské hřiště s pískovištěm (lopatky a bábovičky s sebou ;))
+            </li>
+            <li class="text normal-font">
+              • Stezka skřítka mecháčka (bojovka pro děti)
+            </li>
+            <li class="text normal-font">
+              • Omalovánky nebo čisté papíry, pastelky a fixy
+            </li>
+            <li class="text normal-font">
+              • Předpřipravené lodičky z kůry (vemte si s sebou kapesní nůž)
+            </li>
+            <li class="text normal-font">• Navlékání korálků</li>
+            <li class="text normal-font">• Skákání přes gumu</li>
+            <li class="text normal-font">• Létající talíř</li>
+            <li class="text normal-font">
+              • Společenské hry (Člověče, pojď do ZOO; Dlouhý, široký a
+              krátkozraký; Kudy do pohádky; Smolíček pacholíček; Pexeso)
+            </li>
+          </ul>
+        </div>
+
+        <div id="program-na-nedeli">
+          <div class="py-1-2"></div>
+          <h3 class="heading-2">Program na neděli</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <p class="px-1 text">
+            V neděli ráno Vás nejprve pozveme na společnou snídani. Dále pro Vás
+            máme připravenu ještě jednu bojovku pro děti "O poklad princezny
+            Leontýnky", kterou si pro Vás připravila Honzova sestra Lenka (díky
+            Leni! ;)). Dalším možným programem je procházka podél břehu
+            přehrady. Původně jsme měli v plánu projíždku parníkem, ale jeho
+            jízdní řád v září je bohužel omezený, a tak to časově moc
+            nevychází.<br />
+            Jsme domluveni, že nedělní check-out stačí v průběhu odpoledne.
+          </p>
+        </div>
+
+        <div id="cesta-zpet">
+          <div class="py-1-2"></div>
+          <h3 class="heading-2">Cesta zpět</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <p class="px-1 text">
+            No a když už jsme Vás vytáhli tak daleko na Západ, připravili jsme
+            si pro Vás několik tipů, jak poznat místní pamětihodnosti nebo
+            využít nedaleké atrakce a zpříjemnit si tak cestu domů:
+          </p>
+          <div class="py-1-2"></div>
+          <ul class="px-1">
+            <li class="text normal-font">
+              • Pohled na Plzeň z ptačí perspektivy z věže
+              <a
+                href="https://www.bip.cz/cs/katedrala-sv-bartolomeje"
+                target="_blank"
+                style="color: #1d3557"
+                ><b>kostela sv. Bartoloměje</b>
+              </a>
+            </li>
+            <li class="text normal-font">
+              <a
+                href="https://www.zcm.cz/o-muzeu/objekty/muzeum-loutek"
+                target="_blank"
+                style="color: #1d3557"
+                ><b>• Muzeum loutek v Plzni</b></a
+              >, která je mimo jiné rodištěm Jiřího Trnky a místem, kde se v
+              hlavě Josefa Skup y zrodili Spejbl a Hurvínek
+            </li>
+            <li class="text normal-font">
+              <a
+                href="https://techmania.cz/cs/"
+                target="_blank"
+                style="color: #1d3557"
+                ><b>• Techmania Science Center</b></a
+              >
+            </li>
+            <li class="text normal-font">
+              <a
+                href="https://www.zooplzen.cz/"
+                target="_blank"
+                style="color: #1d3557"
+                ><b>• Plzeňská ZOO</b></a
+              >
+            </li>
+            <li class="text normal-font">
+              <a
+                href="https://www.dinopark.cz/cz/plzen?gclid=EAIaIQobChMInZPFiovQ6gIVyrvVCh1JOw9WEAAYASAAEgJSEPD_BwE"
+                target="_blank"
+                style="color: #1d3557"
+                ><b>• Plzeňský Dinopark</b></a
+              >
+            </li>
+            <li class="text normal-font">
+              <a
+                href="http://zamekujezd.cz/?page_id=248"
+                target="_blank"
+                style="color: #1d3557"
+                ><b>• Farmářova stezka v Újezdě nade Mží</b></a
+              >
+            </li>
+            <li class="text normal-font">
+              • Dobrodružný safari okruh kolem dančí obory v Líšťanech (cca 4
+              km) - pro bližší info kontaktujte ženicha a nevěstu ;)
+            </li>
+            <li class="text normal-font">
+              <a
+                href="https://www.depo2015.cz/"
+                target="_blank"
+                style="color: #1d3557"
+                ><b>• DEPO2015</b></a
+              >
+              - zajímavý prostor a kavárna nejen pro plzeňské hipstery :)
+            </li>
+          </ul>
+          <div class="py-1-2"></div>
+          <h4 class="text">Tipy spíše pro dospělé:</h4>
+          <ul class="px-1">
+            <li class="text normal-font">
+              • Dechberoucí
+              <a
+                href="https://www.klaster-kladruby.cz/cs"
+                target="_blank"
+                style="color: #1d3557"
+                ><b> klášter Kladruby</b></a
+              >
+            </li>
+            <li class="text normal-font">
+              <a
+                href="https://www.prazdrojvisit.cz/prohlidky/prohlidka-pivovaru-plzensky-prazdroj-pilsner-urquell/"
+                target="_blank"
+                style="color: #1d3557"
+                ><b>• Plzeňský pivovar</b>
+              </a>
+            </li>
+          </ul>
+          <div class="py-1-2"></div>
+          <h4 class="text">A ještě dále na západ:</h4>
+          <ul class="px-1">
+            <li class="text normal-font">
+              • Vychillované Konstantinovy lázně s úžasnou pizzerií
+              <a
+                href="https://www.cafekrystofharant.com/"
+                target="_blank"
+                style="color: #1d3557"
+                ><b> Café Kryštof Harant</b></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Galerie -->
@@ -487,140 +1099,2209 @@
         <div class="line-red"></div>
         <div class="line-blue"></div>
         <div class="py-1"></div>
-        <p class="px-1 text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          similique maiores voluptatum iusto animi odio sequi ad totam excepturi
-          accusantium nulla reprehenderit quas quo autem cum culpa, in nisi
-          esse.
-        </p>
 
-        <div class="px-1">
-          <h3 class="heading-2">První společný domov</h3>
+          <p class="px-1 text">Drahá rodino, milí přátelé, rádi bychom Vám ještě jednou poděkovali, že jste byli 5. září 2020 s námi! Když náš pohled sklouzne, třeba někdy kolem poledne všedního dne, k prstýnku, který máme na levém prsteníčku, vzpomeneme si na ten intenzivní a krásný den, který jsme s Vámi prožili. <br>
+          Vzpomínáme i díky fotkám, za které moc děkujeme všem fotografům! Kdybyste si chtěli zavzpomínat s námi, mrkněte níže. Závěrem jsou dvě taneční videa, za která děkujeme Kubíkovi! <br>
+          A děkujeme i za těch pár kapek deště pro štěstí. Jen jsme díky nim přišli o skupinové fotky s Vámi. To nás mrzí. A tak kdybyste měli nějaký pěkný rodinný portrét ze svatby, pošlete nám ho, prosím. Ať Vás máme všechny ;) <br>
+          <b>Mějte se krásně a buďte zdraví!</b></p>
+
+          <div class="py-1"></div>
+          <div class="px-1">
+          <h3 class="heading-2">Fotky od táty</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <div class="images">
+            
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka2.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka2x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka3.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka3x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka1.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka1x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka4.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka4x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka5.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka5x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka6.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka6x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka7.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka7x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka8.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka8x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka9.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka9x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka10.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka10x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka11.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka11x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka12.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka12x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka13.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka13x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka14.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka14x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka15.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka15x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka16.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka16x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka17.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka17x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka18.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka18x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka19.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka19x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka20.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka20x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka21.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka21x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka22.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka22x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka23.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka23x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka24.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka24x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka25.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka25x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka26.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka26x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka27.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka27x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka28.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka28x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka29.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka29x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka30.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka30x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka31.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka31x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka32.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka32x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka33.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka33x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka34.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka34x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka35.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka35x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka36.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka36x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka37.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka37x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka38.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka38x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka39.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka39x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka40.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka40x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka41.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka41x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka42.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka42x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka43.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka43x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka44.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka44x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka45.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka45x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka46.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka46x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka47.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka47x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka48.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka48x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka49.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka49x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka50.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka50x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka51.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka51x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka52.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka52x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka53.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka53x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka54.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka54x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka55.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka55x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka56.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka56x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka57.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka57x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka58.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka58x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka59.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka59x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka60.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka60x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka61.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka61x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka62.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka62x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka64.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka64x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka65.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka65x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka66.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka66x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka67.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka67x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka68.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka68x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka69.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka69x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka70.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka70x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka71.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka71x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka72.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka72x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka73.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka73x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka74.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka74x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka75.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka75x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka76.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka76x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka77.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka77x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka78.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka78x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka79.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka79x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka80.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka80x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka81.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka81x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka82.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka82x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka83.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka83x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka84.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka84x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka85.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka85x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka86.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka86x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka87.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka87x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka88.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka88x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka89.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka89x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka90.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka90x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jirka91.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od táty"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Jirka91x.jpg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+          </div>
+
+          <h3 class="heading-2">Fotky od Terezky</h3>
           <div class="line-blue"></div>
           <div class="py-1-2"></div>
           <div class="images">
             <div class="image">
               <a
-                href="/images/0-0.png"
+                href="https://codehard.cz/svatba/images/Terezka_0.jpeg"
                 data-lightbox="galerie"
-                data-title="První společný domov"
+                data-title="Fotky od Terezky"
               >
-                <img src="/images/0-0.png" alt="obraz" />
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_0-nahled.jpeg"
+                  alt="obraz"
+                />
               </a>
             </div>
             <div class="image">
               <a
-                href="/images/0-1.png"
+                href="https://codehard.cz/svatba/images/Terezka_1.jpeg"
                 data-lightbox="galerie"
-                data-title="První společný domov"
+                data-title="Fotky od Terezky"
               >
-                <img src="/images/0-1.png" alt="ja" />
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_1-nahled.jpeg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Terezka_2.jpeg"
+                data-lightbox="galerie"
+                data-title="Fotky od Terezky"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_2-nahled.jpeg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Terezka_3.jpeg"
+                data-lightbox="galerie"
+                data-title="Fotky od Terezky"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_3-nahled.jpeg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Terezka_4.jpeg"
+                data-lightbox="galerie"
+                data-title="Fotky od Terezky"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_4-nahled.jpeg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Terezka_7.jpeg"
+                data-lightbox="galerie"
+                data-title="Fotky od Terezky"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_7-nahled.jpeg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Terezka_8.jpeg"
+                data-lightbox="galerie"
+                data-title="Fotky od Terezky"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_8-nahled.jpeg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Terezka_9.jpeg"
+                data-lightbox="galerie"
+                data-title="Fotky od Terezky"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_9-nahled.jpeg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Terezka_10.jpeg"
+                data-lightbox="galerie"
+                data-title="Fotky od Terezky"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_10-nahled.jpeg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Terezka_cb.jpeg"
+                data-lightbox="galerie"
+                data-title="Fotky od Terezky"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_cb-nahled.jpeg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Terezka_11.jpeg"
+                data-lightbox="galerie"
+                data-title="Fotky od Terezky"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_11-nahled.jpeg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Terezka_12.jpeg"
+                data-lightbox="galerie"
+                data-title="Fotky od Terezky"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_12-nahled.jpeg"
+                  alt="obraz"
+                />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Terezka_13.jpeg"
+                data-lightbox="galerie"
+                data-title="Fotky od Terezky"
+              >
+                <img
+                  src="https://codehard.cz/svatba/images/Terezka_13-nahled.jpeg"
+                  alt="obraz"
+                />
               </a>
             </div>
           </div>
 
-          <h3 class="heading-2">První společné expedice</h3>
+          <h3 class="heading-2">Fotky od fotografa Petra Jirase</h3>
           <div class="line-blue"></div>
           <div class="py-1-2"></div>
           <div class="images">
+          
             <div class="image">
               <a
-                href="/images/1-0.png"
+                href="https://codehard.cz/svatba/images/Jiras2.jpg"
                 data-lightbox="galerie"
-                data-title="První společné expedice"
+                data-title="Fotky od Petra Jirase"
               >
-                <img src="/images/1-0.png" alt="Terka" />
+                <img src="https://codehard.cz/svatba/images/Jiras2-nahled.jpg" alt="ja" />
               </a>
             </div>
             <div class="image">
               <a
-                href="/images/1-1.png"
+                href="https://codehard.cz/svatba/images/Jiras3.jpg"
                 data-lightbox="galerie"
-                data-title="První společné expedice"
+                data-title="Fotky od Petra Jirase"
               >
-                <img src="/images/1-1.png" alt="ja" />
+                <img src="https://codehard.cz/svatba/images/Jiras3-nahled.jpg" alt="ja" />
               </a>
             </div>
             <div class="image">
               <a
-                href="/images/1-2.png"
+                href="https://codehard.cz/svatba/images/Jiras1.jpg"
                 data-lightbox="galerie"
-                data-title="První společné expedice"
+                data-title="Fotky od Petra Jirase"
               >
-                <img src="/images/1-2.png" alt="Terka" />
+                <img
+                  src="https://codehard.cz/svatba/images/Jiras1-nahled.jpg"
+                  alt="obraz"
+                />
               </a>
             </div>
             <div class="image">
               <a
-                href="/images/1-3.png"
+                href="https://codehard.cz/svatba/images/Jiras4.jpg"
                 data-lightbox="galerie"
-                data-title="První společné expedice"
+                data-title="Fotky od Petra Jirase"
               >
-                <img src="/images/1-3.png" alt="ja" />
+                <img src="https://codehard.cz/svatba/images/Jiras4.jpg" alt="ja" />
               </a>
             </div>
             <div class="image">
               <a
-                href="/images/1-4.png"
+                href="https://codehard.cz/svatba/images/Jiras5.jpg"
                 data-lightbox="galerie"
-                data-title="První společné expedice"
+                data-title="Fotky od Petra Jirase"
               >
-                <img src="/images/1-4.png" alt="ja" />
+                <img src="https://codehard.cz/svatba/images/Jiras5.jpg" alt="ja" />
               </a>
             </div>
             <div class="image">
               <a
-                href="/images/1-6.png"
+                href="https://codehard.cz/svatba/images/Jiras7.jpg"
                 data-lightbox="galerie"
-                data-title="První společné expedice"
+                data-title="Fotky od Petra Jirase"
               >
-                <img src="/images/1-6.png" alt="stan" />
+                <img src="https://codehard.cz/svatba/images/Jiras7-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras8.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras8-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras9.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras9-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras10.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras10-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras11.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras11-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras12.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras12-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras13.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras13-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras14.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras14-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras15.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras15-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras16.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras16-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras17.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras17-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras18.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras18-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras19.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras19-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras20.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras20-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras21.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras21-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras22.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras22-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras23.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras23-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras24.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras24-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras25.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras25-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras26.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras26-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras27.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras27-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras28.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras28-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras29.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras29-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras30.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras30-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras31.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras31-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras32.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras32-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras33.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras33-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras34.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras34-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras35.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras35-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras36.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras36-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras37.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras37-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras38.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras38-nahled.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Jiras39.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Petra Jirase"
+              >
+                <img src="https://codehard.cz/svatba/images/Jiras39-nahled.jpg" alt="ja" />
               </a>
             </div>
           </div>
 
-          <h3 class="heading-2">První zásnuby na vrcholu Adam's Peak</h3>
+          <h3 class="heading-2">Fotky od bratránka Kuby</h3>
           <div class="line-blue"></div>
           <div class="py-1-2"></div>
-          <div class="images">
+          <div class="images">          
             <div class="image">
               <a
-                href="/images/2-0.jpg"
+                href="https://codehard.cz/svatba/images/Kuba1.jpg"
                 data-lightbox="galerie"
-                data-title="První zásnuby na vrcholu Adam's Peak"
+                data-title="Fotky od bratránka Kuby"
               >
-                <img src="/images/2-0.jpg" alt="mapa" />
+                <img src="https://codehard.cz/svatba/images/Kuba1x.jpg" alt="ja" />
               </a>
             </div>
             <div class="image">
               <a
-                href="/images/2-1.png"
+                href="https://codehard.cz/svatba/images/Kuba2.jpg"
                 data-lightbox="galerie"
-                data-title="První zásnuby na vrcholu Adam's Peak"
+                data-title="Fotky od bratránka Kuby"
               >
-                <img src="/images/2-1.png" alt="svitani" />
+                <img src="https://codehard.cz/svatba/images/Kuba2x.jpg" alt="ja" />
               </a>
             </div>
             <div class="image">
               <a
-                href="/images/2-2.png"
+                href="https://codehard.cz/svatba/images/Kuba3.jpg"
                 data-lightbox="galerie"
-                data-title="První zásnuby na vrcholu Adam's Peak"
+                data-title="Fotky od bratránka Kuby"
               >
-                <img src="/images/2-2.png" alt="plaz" />
+                <img src="https://codehard.cz/svatba/images/Kuba3x.jpg" alt="ja" />
               </a>
             </div>
             <div class="image">
               <a
-                href="/images/2-3.png"
+                href="https://codehard.cz/svatba/images/Kuba4.jpg"
                 data-lightbox="galerie"
-                data-title="První zásnuby na vrcholu Adam's Peak"
+                data-title="Fotky od bratránka Kuby"
               >
-                <img src="/images/2-3.png" alt="snidane" />
+                <img src="https://codehard.cz/svatba/images/Kuba4x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba5.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba5x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba6.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba6x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba7.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba7x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba8.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba8x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba9.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba9x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba10.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba10x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba11.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba11x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba12.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba12x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba13.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba13x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba14.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba14x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba15.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba15x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba16.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba16x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba17.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba17x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba18.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba18x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba19.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba19x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba20.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba20x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba21.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba21x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba22.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba22x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba23.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba23x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba24.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba24x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba25.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba25x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba26.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba26x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba27.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba27x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba28.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba28x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba29.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba29x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba30.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba30x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba31.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba31x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba32.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba32x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba33.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba33x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba34.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba34x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba35.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba35x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba36.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba36x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba37.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba37x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba38.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba38x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba39.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba39x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba40.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba40x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba41.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba41x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba42.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba42x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba43.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba43x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba44.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba44x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba45.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba45x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba46.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba46x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba47.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba47x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Kuba48.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od bratránka Kuby"
+              >
+                <img src="https://codehard.cz/svatba/images/Kuba48x.jpg" alt="ja" />
               </a>
             </div>
           </div>
-        </div>
+
+          <h3 class="heading-2">Fotky od Honzy Podušky</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+          <div class="images">          
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Podu1.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Honzy Podušky"
+              >
+                <img src="https://codehard.cz/svatba/images/Podu1x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Podu2.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Honzy Podušky"
+              >
+                <img src="https://codehard.cz/svatba/images/Podu2x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Podu3.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Honzy Podušky"
+              >
+                <img src="https://codehard.cz/svatba/images/Podu3x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Podu4.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Honzy Podušky"
+              >
+                <img src="https://codehard.cz/svatba/images/Podu4x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Podu5.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Honzy Podušky"
+              >
+                <img src="https://codehard.cz/svatba/images/Podu5x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Podu6.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Honzy Podušky"
+              >
+                <img src="https://codehard.cz/svatba/images/Podu6x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Podu7.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Honzy Podušky"
+              >
+                <img src="https://codehard.cz/svatba/images/Podu7x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Podu8.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Honzy Podušky"
+              >
+                <img src="https://codehard.cz/svatba/images/Podu8x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Podu9.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Honzy Podušky"
+              >
+                <img src="https://codehard.cz/svatba/images/Podu9x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Podu10.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Honzy Podušky"
+              >
+                <img src="https://codehard.cz/svatba/images/Podu10x.jpg" alt="ja" />
+              </a>
+            </div>
+            <div class="image">
+              <a
+                href="https://codehard.cz/svatba/images/Podu11.jpg"
+                data-lightbox="galerie"
+                data-title="Fotky od Honzy Podušky"
+              >
+                <img src="https://codehard.cz/svatba/images/Podu11x.jpg" alt="ja" />
+              </a>
+            </div>
+          </div>
+
+          <h3 class="heading-2">Náš první tanec</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+
+          <div class="container-video">
+            <video
+              class="js-player"
+              controls
+              crossorigin
+              playsinline
+              poster="https://codehard.cz/svatba/video/thumbnail1.JPG"
+            >
+              <source
+                class="s"
+                src="https://codehard.cz/svatba/video/svatba-tanec1.mp4"
+                type="video/mp4"
+                size="250"
+              />
+            </video>
+            <div class="py-1-2"></div>
+          </div>
+
+          <h3 class="heading-2">Společný tanec s rodiči a kamarády ;)</h3>
+          <div class="line-blue"></div>
+          <div class="py-1-2"></div>
+
+          <div class="container-video">
+            <video
+              class="js-player"
+              controls
+              crossorigin
+              playsinline
+              poster="https://codehard.cz/svatba/video/thumbnail3.jpg"
+            >
+              <source
+                class="s"
+                src="https://codehard.cz/svatba/video/svatba-tanec2.mp4"
+                type="video/mp4"
+                size="250"
+              />
+            </video>
+          </div>
+
+          <div class="py-1"></div>
+          <p class="px-1 text">
+            Pokud se chcete podívat na galerii dokumentující naši společnou
+            cestu životem než jsme si řekli zámecké &quot;ano&quot;, klikněte
+            <b><a href="https://codehard.cz/svatba/galerie.html" style="color: #000">sem</a></b>
+            .
+          </p>
+        <!-- </div> -->
       </section>
     </main>
 
@@ -647,11 +3328,17 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="/js/smooth-scroll.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <!-- <script src="/js/loader.js"></script> -->
-    <script src="/js/parallax.js"></script>
-    <script src="/js/timeline.js"></script>
-    <script src="/js/form-validation.js"></script>
+    <script src="https://codehard.cz/svatba/js/hero.js"></script>
+    <!-- <script src="/js/hero.js"></script> -->
+    <script src="https://codehard.cz/svatba/js/smooth-scroll.js"></script>
+    <script src="https://codehard.cz/svatba/js/lightbox.min.js"></script>
+    <script src="https://codehard.cz/svatba/js/loader.js"></script>
+    <script src="https://codehard.cz/svatba/js/parallax.js"></script>
+    <!-- <script src="/js/parallax.js"></script> -->
+    <script src="https://codehard.cz/svatba/js/timeline.js"></script>
+    <script src="https://codehard.cz/svatba/js/form-validation.js"></script>
+    <script src="https://codehard.cz/svatba/js/hamburger-menu.js"></script>
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+    <script src="https://codehard.cz/svatba/js/plyr.js"></script>
   </body>
 </html>

@@ -3,5 +3,5 @@ window.addEventListener("load", () => {
 
   setTimeout(function () {
     loader.className += " hidden";
-  }, 3000);
+  }, 800);
 });

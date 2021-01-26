@@ -1,0 +1,19 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore img and video folders
+!img/
+images/
+video/
+
+# Ignore other folders
+endora/
+Excel/
+index/
+index_old/
+
+# Ignore files related to API keys
+.env
+
+# Ignore SASS config files
+.sass-cache

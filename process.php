@@ -2,7 +2,7 @@
   if (isset($_POST['email']))  {
   
     //email information
-    $admin_email = "info@codehard.wz.cz";
+    $admin_email = "info@codehard.cz";
     $jmeno = $_POST['jmeno'];
     $telefon = $_POST['telefon'];
     $email = $_POST['email'];
@@ -15,5 +15,5 @@
     mail($admin_email, "RSVP", $jmeno . "%" . $telefon . "%" . $email . "%" . $pocetdospeli . "%" . $pocetdeti . "%" . $ubytovani . "%" . $komentar, "From:" . $email);
     
     //navigate to
-    header('Location: http://codehard.wz.cz/success.html');
+    header('Location: https://codehard.cz/svatba/success.html');
   }
